@@ -1,0 +1,41 @@
+= adoclive readme
+rinx
+2022.11.16
+:Revision: v0.0.1
+
+== adoclive.vim
+
+A live preview plugin for Asciidoc and Markdown.
+
+=== Requirements
+
+* denops.vim
+* Deno 1.28.0 or later
+
+=== Usage
+
+After opening a buffer in your Vim/Neovim, please execute the command `:Adoclive`.
+A live preview session will be started and a browser tab will be opened automatically. +
+`:AdocliveClose` closes the session.
+
+The configuration parameters are shown below.
+
+.Configurations
+|===
+| variable | description | default
+| `g:adoclive#server_host`
+| hostname of the preview server
+| `127.0.0.1`
+| `g:adoclive#server_port`
+| port number of the preview server
+| `0` means random port
+| `g:adoclive#open_browser`
+| if enabled, preview page will be opened automatically
+| `v:true`
+|===
+
+=== Thanks
+
+* https://github.com/kat0h/bufpreview.vim[kat0h/bufpreview.vim]
+* https://github.com/tani/glance-vim[tani/glance-vim]
+
